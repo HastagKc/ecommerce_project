@@ -1,0 +1,80 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* *::before,
+*::after {
+  content: "";
+  padding: 0;
+  margin: 0;
+} */
+
+:root {
+  --navbar-height: 10vh;
+}
+.nav__bar {
+  height: var(--navbar-height);
+}
+
+.carousel__image {
+  height: calc(75vh - var(--navbar-height));
+  object-fit: cover;
+}
+
+/* drop down category */
+
+.category_container {
+  margin-top: 10px;
+  padding: 20px;
+  background-color: black;
+}
+
+.category_icon {
+  color: white;
+}
+
+.dropbtn {
+  color: white;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.drop__down__category-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.drop__down__category-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.drop__down__category-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.drop__down__category:hover .drop__down__category-content {
+  display: block;
+}
+.card__img {
+  height: 250px;
+}
+
+.add_to_cart {
+  width: 100%;
+}
+
+@media screen and (max-width: 992px) {
+  .nav__bar {
+    height: auto;
+  }
+}
